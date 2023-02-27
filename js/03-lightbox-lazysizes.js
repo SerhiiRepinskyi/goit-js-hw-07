@@ -35,15 +35,15 @@ let lightbox = new SimpleLightbox(".gallery a", {
 });
 
 /*
- * Библіотека lazysizes
+ * Бібліотека lazysizes
  * - feature detection
  */
 
 if ("loading" in HTMLImageElement.prototype) {
-  console.log("Браузер підтримує lazyload");
+  console.log("Браузер підтримує lazy-loading");
   addSrcAttrToLazyImages();
 } else {
-  console.log("Браузер НЕ підтримує lazyload");
+  console.log("Браузер НЕ підтримує lazy-loading");
   addLazySizesScript();
 }
 
